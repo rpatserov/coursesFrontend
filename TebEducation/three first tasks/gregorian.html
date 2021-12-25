@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pol">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregorian</title>
+</head>
+<body>
+    <script>
+        var year = prompt("Input a year: ");
+        if (year < 1582) {
+            alert("Nie w kalendarzu gregoriańskim");
+        } else if (year % 4 != 0) {
+            alert("Rok zwykły");
+        } else if (year % 100 != 0) {
+            alert("Rok przestępny");
+        } else if (year % 400 != 0) {
+            alert("Rok zwykły");
+        } else {
+            alert("Rok przestępny");
+        }
+    </script>
+</body>
+</html>
